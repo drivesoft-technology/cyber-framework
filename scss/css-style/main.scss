@@ -14,6 +14,13 @@
 html { font-family: sans-serif; } 
 body { width: 100%; margin: 0; background-color: $bg-color; font-size: $font-size; line-height: $line-height; color: $font-color; }
 
+a { 
+    &:link, &:active, &:hover, &:visited { text-decoration: none; color: $font-color; }
+    &:hover { cursor: pointer; }
+    text-decoration: none; 
+    transition: color 200ms; 
+}
+
 .clear { display: block; width: 0; height: 0; visibility: hidden; overflow: hidden; clear: both;  }
 
 .clearfix:before, .clearfix:after { display: table; content: " "; }

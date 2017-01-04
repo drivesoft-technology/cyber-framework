@@ -28,10 +28,11 @@
 @import 'css-style/table/table';
 @import 'css-style/form/form';
 
-/*
-@import 'imports/button';
-@import 'imports/link';
+@import 'css-style/image/image';
 
-@import 'imports/image';
-@import 'imports/video';
-*/
+/* =============================================
+ * UI Component
+ * ============================================= */
+
+@import 'components/panel';
+@import 'components/box';
