@@ -1,0 +1,31 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../variables/_setting';
+
+/* =============================================
+ * main
+ * ============================================= */
+
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+
+html { font-family: sans-serif; } 
+body { width: 100%; margin: 0; background-color: $bg-color; font-size: $font-size; line-height: $line-height; color: $font-color; }
+
+a { 
+    &:link, &:active, &:hover, &:visited { text-decoration: none; }
+    &:hover { cursor: pointer; }
+    text-decoration: none; 
+    transition: color 200ms;
+    /*
+    color: #1ABC9C; 
+    border-bottom: 1px dotted #1ABC9C;padding-bottom: 3px;
+    */
+}
+
+.clear { display: block; width: 0; height: 0; visibility: hidden; overflow: hidden; clear: both;  }
+
+.clearfix:before, .clearfix:after { display: table; content: " "; }
+.clearfix:after { display: block; clear: both; font-size: 0; line-height: 0; height: 0; visibility: hidden; zoom: 1; }

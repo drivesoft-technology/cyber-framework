@@ -1,0 +1,13 @@
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../../variables/_setting';
+
+/* =============================================
+ * container
+ * ============================================= */
+
+.container, .container-fluid { position: relative; display: block; margin: 0; padding: 0; width: auto; float: none; clear: both; }
+.container { margin: 0 auto; max-width: $max-width; margin-top: ($gutter-width * 2); margin-bottom: ($gutter-width * 2); }
+.container-fluid { margin-left: auto; margin-right: auto; }

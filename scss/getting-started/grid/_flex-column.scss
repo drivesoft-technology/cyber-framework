@@ -1,0 +1,64 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../../variables/_setting';
+@import '../../variables/_column';
+
+/* =============================================
+ * column
+ * ============================================= */
+
+.col-15, .col-14, .col-13, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+	position: relative;
+    padding: $gutter-width;
+	width: 100%;
+	min-height: 5px;
+	flex: auto;
+}
+
+.col-top    { align-self: flex-start; }
+.col-bottom { align-self: flex-end;   }
+.col-fluid  { align-self: stretch;    }
+.col-center { align-self: center;     }
+
+@media only screen and (min-width: $tablet-width) {
+	
+	.col, .col-14, .col-13, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+	   flex: none; 
+	}
+	
+    .col-15 { width: $col-15; }
+    .col-14 { width: $col-14; }
+    .col-13 { width: $col-13; }    
+    .col-12 { width: $col-12; }
+    .col-11 { width: $col-11; }
+    .col-10 { width: $col-10; }
+    .col-9  { width:  $col-9; }
+    .col-8  { width:  $col-8; }
+    .col-7  { width:  $col-7; }
+    .col-6  { width:  $col-6; }
+    .col-5  { width:  $col-5; }
+    .col-4  { width:  $col-4; }
+    .col-3  { width:  $col-3; }
+    .col-2  { width:  $col-2; }
+    .col-1  { width:  $col-1; } 
+
+    .col-offset-15 { margin-left: $col-15; }
+    .col-offset-14 { margin-left: $col-14; }
+    .col-offset-13 { margin-left: $col-13; }    
+    .col-offset-12 { margin-left: $col-12; }
+    .col-offset-11 { margin-left: $col-11; }
+    .col-offset-10 { margin-left: $col-10; }
+    .col-offset-9  { margin-left:  $col-9; }
+    .col-offset-8  { margin-left:  $col-8; }
+    .col-offset-7  { margin-left:  $col-7; }
+    .col-offset-6  { margin-left:  $col-6; }
+    .col-offset-5  { margin-left:  $col-5; }
+    .col-offset-4  { margin-left:  $col-4; }
+    .col-offset-3  { margin-left:  $col-3; }
+    .col-offset-2  { margin-left:  $col-2; }
+    .col-offset-1  { margin-left:  $col-1; } 
+
+}

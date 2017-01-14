@@ -1,0 +1,108 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../variables/_setting';
+@import '../variables/_color';
+@import '../mixins/_component';
+
+/* =============================================
+ * horizontal
+ * ============================================= */
+
+.box-horizontal { margin: 0; }
+.box-horizontal > .box-list { margin-bottom: 15px; clear: both; }
+.box-horizontal > .box-list:hover { cursor: pointer; }
+.box-horizontal .box-left { float: left; position: relative; top: 0; width: 100%; }
+.box-horizontal .box-left img { width: 100%; }
+.box-horizontal .box-left label { z-index: 2; position: absolute; top: 15px; left: -5px; padding: 5px 10px; color: #FFFFFF; }
+.box-horizontal .box-left span { position: absolute; top: 0; margin-bottom: 0; width: 100%; height: 98%; @include transition (.3s ease-in-out); background-color: rgba(0,0,0,0.30); text-align: center; opacity: 0; }
+.box-horizontal .box-left span i { margin-top: 19%; color: #FFFFFF; font-size: 2.2em; }
+.box-horizontal .box-left:hover span { opacity: 1; }
+.box-horizontal .box-right { float: left; width: 100%; }
+.box-horizontal .box-right .box-detail { padding: 20px 15px 20px; }
+.box-horizontal .box-right .box-detail h2 { padding-top: 15px; font-size: 2.1em; }
+.box-horizontal .box-right .box-detail span { font-size: 0.8em; }
+
+@include screen-custom(640px) {
+    .box-horizontal .box-left span i { margin-top: 21%; font-size: 3.0em; }
+}
+@include screen-tablet {
+    .box-horizontal .box-left span i { margin-top: 19%; font-size: 3.5em; }
+}
+
+@include screen-between($tablet-width, 960px) {
+    .box-horizontal .box-left, .box-horizontal .box-right { width: 100%; }
+}
+@include screen-custom(1024px) {
+	.box-horizontal .box-left { width: 45%; }
+	.box-horizontal .box-left span i { font-size: 2.6em; }
+    .box-horizontal .box-right { width: 55%; }
+    .box-horizontal .box-right .box-detail { padding-top: 0; }
+}
+@include screen-desktop { 
+    .box-horizontal .box-right .box-detail { padding-top: 5px; }
+    .box-horizontal .box-right .box-detail span { font-size: 0.9em; }
+}
+
+/* =============================================
+ * vertical
+ * ============================================= */
+
+.box-vertical { margin: 0; }
+.box-vertical > .box-list { margin-bottom: 15px; clear: both; }
+.box-vertical > .box-list:hover { cursor: pointer; }
+.box-vertical .box-top { float: left; position: relative; top: 0; width: 100%; }
+.box-vertical .box-top img { width: 100%; }
+.box-vertical .box-top label { z-index: 10; position: absolute; top: 15px; left: -5px; padding: 5px 10px; color: #FFFFFF; }
+.box-vertical .box-top span { z-index: 1; position: absolute; top: 0; width: 100%; height: 99%; @include transition (.3s ease-in-out); background-color: rgba(0, 0, 0, 0.30); text-align: center; opacity: 0; }
+.box-vertical .box-top span i { margin-top: 20%; font-size: 2.2em; color: #FFFFFF; }
+.box-vertical .box-top:hover span { opacity: 1; }
+.box-vertical .box-bottom { float: left; width: 100%; }
+.box-vertical .box-bottom .box-detail { padding: 15px 0 25px; text-align: left; }
+.box-vertical .box-bottom .box-detail h2 { padding-top: 5px; }
+.box-vertical .box-bottom .box-detail span { font-size: 0.7em; }
+
+@include screen-custom(480px) {
+    .box-vertical .box-top span i { margin-top: 20%; }
+    .box-vertical .box-bottom .box-detail span { font-size: 0.9em; }
+}
+
+@include screen-custom(960px) {
+	.box-vertical .box-top span i { margin-top: 22%; font-size: 3.0em; }
+}
+
+/* =============================================
+ * box 3 column.
+ * ============================================= */
+
+.box-three { margin: 0; }
+.box-three > .box-list { float: left; display: block; position: relative; margin: 5px; width: 98.5%; }
+.box-three > .box-list img { width: 100%; }
+.box-three > .box-list label { position: absolute; top: 5px; left: 0; padding: 5px 10px; color: #FFFFFF; }
+.box-three > .box-list p { position: absolute; bottom: -25px; width: 100%; padding: 15px; margin-bottom: 3px; background-color: rgba(20, 20, 20, 0.7); color: #FFFFFF; opacity: 0; @include transition (.2s ease-in-out); }
+.box-three > .box-list:hover p { bottom: 0; opacity: 1; }
+.box-three > .box-list:hover img { opacity: .9; } 
+
+@include screen-tablet {
+    .box-three > .box-list { height: auto; }
+    .box-three > .box-list label { left: -5px; }
+}
+
+@include screen-custom(960px) {
+    .box-three > .box-list { width: 31.86%; height: auto; }
+    .box-three > .box-list p { display: block; }
+}
+
+@include screen-desktop {
+    .box-three > .box-list { width: 32.17%; height: auto; }
+}
+
+/* =============================================
+ * box 5 column.
+ * ============================================= */
+
+.box-5-list { position: relative; display: block; width: 20%; float: left; text-align: center; }
+.box-5-list:hover { cursor: pointer; }
+.box-5-image { width: 98%; }
