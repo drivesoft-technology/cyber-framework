@@ -1,0 +1,87 @@
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../variables/_setting'; 
+@import '../variables/_font';
+
+/* =============================================
+ * font
+ * ============================================= */
+
+.font-tahoma     { font-family: $font-tahoma, $font-sans-serif; }
+.font-sans-serif { font-family: $font-sans-serif; }
+
+/* =============================================
+ * text
+ * ============================================= */
+
+.text-left     { text-align: left;    }
+.text-right    { text-align: right;   }
+.text-center   { text-align: center;  }
+.text-justify  { text-align: justify; }
+.text-nowrap   { white-space: nowrap; }
+
+.text-lower    { text-transform: lowercase;  } /* font low */
+.text-upper    { text-transform: uppercase;  } /* font up */
+.text-firstup  { text-transform: capitalize; } /* font first-up */
+
+/* =============================================
+ * h1 - h6
+ * ============================================= */
+
+hr { height: 0; @include box-sizing (content-box); margin-top: 10px; margin-bottom: 10px; border: 0; border-top: 1px solid #EEE; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-weight: 600; line-height: 1.1; padding: 0.5em 0 0.6em 0; margin: 0; margin-bottom: 5px; font-weight: bold; }
+
+h1, .h1 { font-size: 2.5em; }
+h2, .h2 { font-size: 2.2em; }
+h3, .h3 { font-size: 1.8em; }
+h4, .h4 { font-size: 1.4em; }
+h5, .h5 { font-size: 1.2em; }
+h6, .h6 { font-size: 1.0em; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: normal; font-size: 0.65em; color: #999; }
+
+p { margin-top: 0; margin: 0 0 10px; word-wrap: break-word; font-size: 1.0em; }
+pre { overflow: auto; font-size: 1em; }
+
+/* =============================================
+ * color
+ * ============================================= */
+
+.color-turquoise    { color: $color-turquoise; }
+.color-emerland     { color: $color-emerland; }
+.color-peterriver   { color: $color-peterriver; }
+.color-amethyst     { color: $color-amethyst; }
+.color-wetasphalt   { color: $color-wetasphalt; }
+
+.color-greensea     { color: $color-greensea; }
+.color-nephritis    { color: $color-nephritis; }
+.color-belizehole   { color: $color-belizehole; }
+.color-wisteria     { color: $color-wisteria; }
+.color-midnightblue { color: $color-midnightblue; }
+
+.color-sunflower    { color: $color-sunflower; }
+.color-carrot       { color: $color-carrot; }
+.color-alizarin     { color: $color-alizarin; }
+.color-clouds       { color: $color-clouds; }
+.color-concrete     { color: $color-concrete; }
+
+.color-orange       { color: $color-orange; }
+.color-pumpkin      { color: $color-pumpkin; }
+.color-pomegranate  { color: $color-pomegranate; }
+.color-silver       { color: $color-silver; }
+.color-asbestos     { color: $color-asbestos; }
+
+.color-android      { color: $color-android; }
+.color-rss          { color: $color-rss; }
+.color-googleplus   { color: $color-googleplus; }
+.color-twitter      { color: $color-twitter; }
+.color-facebook     { color: $color-facebook; }
+
+.color-success      { color: $color-success; }
+.color-warning      { color: $color-warning; }
+.color-error        { color: $color-error; }
+.color-info         { color: $color-info; }
+.color-primary      { color: $color-primary; }

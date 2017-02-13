@@ -1,0 +1,39 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../../variables/_setting';
+@import '../../mixins/_component';
+
+/* =============================================
+ * row
+ * ============================================= */
+
+.row, .row-left, .row-right, .row-center, .row-between, .row-auto { 
+	
+	display: -ms-flexbox; 
+	display: -webkit-flex; 
+	display: flex; 
+	
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	
+	align-content: flex-start; 
+	align-items: stretch; 
+	
+	clear: both; 
+	
+}
+
+.row         { justify-content: flex-start; }
+.row-left    { justify-content: flex-start; }
+.row-right   { justify-content: flex-end; }
+.row-center  { justify-content: center; }
+.row-between { justify-content: space-between; }
+.row-auto    { justify-content: space-around; }
+
+.top         { align-items: flex-start; }
+.bottom      { align-items: flex-end; }
+.fluid       { align-items: stretch; }
+.center      { align-items: center; }

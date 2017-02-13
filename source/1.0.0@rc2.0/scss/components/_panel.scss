@@ -1,0 +1,55 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../variables/_color';
+
+/* =============================================
+ * panel
+ * ============================================= */
+
+.panel-header { margin: 0; padding: 10px; color: #FFF; border-radius: 3px 3px 0 0; }
+.panel-body { border-radius: 0 0 3px 3px; }
+
+.panel-body ul, .panel-body ul li { margin: 0; padding: 0; display: block; width: 100%; }
+.panel-body ul { list-style: none; border-top: none; padding: 10px 10px 3px 10px; }
+.panel-body ul li { padding: 10px 0; }
+
+/* =============================================
+ * color
+ * ============================================= */
+
+.panel {
+    .panel-header { background-color: $color-turquoise; border: 1px solid $color-turquoise; }
+    .panel-body { border: 1px solid $color-turquoise; }
+    .panel-body ul li { border-top: 1px solid $color-turquoise; }
+}
+
+.panel-turquoise { 
+    .panel-header  { background-color: $color-turquoise; border: 1px solid $color-turquoise; }
+    .panel-body { border: 1px solid $color-turquoise; }
+    .panel-body ul li { border-top: 1px solid $color-turquoise; }
+}
+.panel-emerland { 
+    .panel-header  { background-color: $color-emerland; border: 1px solid $color-emerland; }
+    .panel-body { border: 1px solid $color-emerland; }
+    .panel-body ul li { border-top: 1px solid $color-emerland; }
+}
+.panel-peterriver { 
+    .panel-header { background-color: $color-peterriver; border: 1px solid $color-peterriver; }
+    .panel-body { border: 1px solid $color-peterriver; }
+    .panel-body ul li { border-top: 1px solid $color-peterriver; }
+}
+.panel-amethyst { 
+    .panel-header { background-color: $color-amethyst; border: 1px solid $color-amethyst; }
+    .panel-body { border: 1px solid $color-amethyst; }
+    .panel-body ul li { border-top: 1px solid $color-amethyst; }
+}
+.panel-wetasphalt { 
+    .panel-header { background-color: $color-wetasphalt; border: 1px solid $color-wetasphalt; }
+    .panel-body { border: 1px solid $color-wetasphalt; }
+    .panel-body ul li { border-top: 1px solid $color-wetasphalt; }
+}
+
+.panel-body ul li:first-child { padding-top: 0; border-top: none; }

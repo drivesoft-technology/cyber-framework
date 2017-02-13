@@ -1,0 +1,51 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../variables/_color';
+
+/* =============================================
+ * background
+ * ============================================= */
+
+.bg-turquoise    { background-color: $color-turquoise }
+.bg-emerland     { background-color: $color-emerland; }
+.bg-peterriver   { background-color: $color-peterriver; }
+.bg-amethyst     { background-color: $color-amethyst; }
+.bg-wetasphalt   { background-color: $color-wetasphalt; color: #FFFFFF; }
+
+.bg-greensea     { background-color: $color-greensea; }
+.bg-nephritis    { background-color: $color-nephritis; }
+.bg-belizehole   { background-color: $color-belizehole; }
+.bg-wisteria     { background-color: $color-wisteria; }
+.bg-midnightblue { background-color: $color-midnightblue; color: #FFFFFF; }
+
+.bg-sunflower    { background-color: $color-sunflower; }
+.bg-carrot       { background-color: $color-carrot; }
+.bg-alizarin     { background-color: $color-alizarin; }
+.bg-clouds       { background-color: $color-clouds; }
+.bg-concrete     { background-color: $color-concrete; }
+
+.bg-orange       { background-color: $color-orange; }
+.bg-pumpkin      { background-color: $color-pumpkin; }
+.bg-pomegranate  { background-color: $color-pomegranate; }
+.bg-silver       { background-color: $color-silver; }
+.bg-asbestos     { background-color: $color-asbestos; }
+
+.bg-android      { background-color: $color-android; }
+.bg-rss          { background-color: $color-rss; }
+.bg-googleplus   { background-color: $color-googleplus; }
+.bg-twitter      { background-color: $color-twitter; }
+.bg-facebook     { background-color: $color-facebook; color: #FFFFFF; }
+
+.bg-success      { background-color: $color-success; }
+.bg-warning      { background-color: $color-warning; }
+.bg-error        { background-color: $color-error; }
+.bg-info         { background-color: $color-info; }
+.bg-primary      { background-color: $color-primary; }
+ 
+.bg-black        { background-color: #000; }
+.bg-white        { background-color: #FFF; }
+
+.bg-gradient { width: 100%; height: 250px; background: linear-gradient(141DEG, #0FB8AD 0%, #1FC8DB 51%, #2CB5E8 75%); color: white; opacity: 0.95; }

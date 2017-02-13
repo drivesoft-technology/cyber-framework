@@ -1,0 +1,62 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../variables/_setting'; 
+@import '../mixins/_component';
+
+/* =============================================
+ * table 
+ * ============================================= */
+
+table { border-spacing: 0; background-color: transparent; }
+td, th { padding: 0; }
+
+.table {
+    
+    &.table-fluid { border-spacing: 0; width: 100% !important; }
+
+    &.table-hover {
+        tbody > tr { @include transition(0.5s); }
+        tbody > tr:hover { 
+            background-color: rgba(238, 238, 238, 0.1); 
+            cursor: pointer; 
+        }
+    }
+
+    tbody > tr > td, 
+    thead > tr > th, 
+    tfoot > tr > td { 
+        border: 1px solid #EEEEEE;
+        padding: 0.4rem 0.5rem; 
+        text-align: left; 
+    }
+	
+	thead > tr > th, 
+	tfoot > tr > td { 
+		background-color: rgba(238, 238, 238, 1); 
+		border-right: 1px solid #DDDDDD; 
+		&:last-child { 
+			border-right: 1px solid #EEEEEE; 
+		}
+	}
+	
+    border-collapse: collapse; 
+    border-spacing: 0;
+    margin-bottom: 10px;
+
+}
+
+.table-responsive {
+    overflow-x: auto;
+    .table {
+        tbody > tr > td, 
+        thead > tr > th, 
+        tfoot > tr > td { 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; 
+        }
+    }
+}

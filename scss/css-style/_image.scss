@@ -1,0 +1,42 @@
+
+/* =============================================
+ * setting
+ * ============================================= */
+
+@import '../variables/_setting';
+@import '../mixins/_component';
+/* =============================================
+ * image
+ * ============================================= */
+
+.img { max-width: 100%; height: auto; @include transition-duration (0.3s); }
+.img:hover { opacity: 0.8; box-shadow: 0 0 2px 1px rgba( 26, 188, 156, 0.2); } 
+
+.img-rounded { border-radius: 8px; }
+.img-circled { border-radius: 50%; }
+.img-thumbnail { border: 1px solid #DDDDDD; border-radius: 4px; padding: 5px; }
+
+.img-link { display: inline-block; border: 1px solid #DDDDDD; border-radius: 5px; padding: 5px 5px 0px 5px; }
+.img-link:hover { box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5); }
+
+.img-center { display: block; margin: auto; max-width: 100%; }
+
+.img-box { position: relative; }
+.img-box .img { width: 100%; }
+.img-text-top, .img-text-bottom, .img-text-left, .img-text-right { display: none; position: absolute; color: #FFFFFF; }
+.img-text-top { top: 15px; }
+.img-text-bottom { bottom : 15px; }
+.img-text-left { left: 20px; }
+.img-text-right { right: 20px; }
+.img-text-center { top: 50%; left: 50%; transform: translate(-50%, -50%); position: absolute; color: #FFFFFF;  }
+
+/* tablet */
+@media only screen and (min-width: $tablet-width) { 
+    .img-text-top, .img-text-bottom, .img-text-left, .img-text-right { display: block; }
+}
+
+.img-card {
+    position: relative;
+    padding: 0; margin: 0;
+    .img-content { position: absolute; left: 0; bottom: -8px; padding: 10px 0 12px 0; width: 100%; text-align: center; background-color: rgba(0, 0, 0, 0.3); color: #FFF; }
+}

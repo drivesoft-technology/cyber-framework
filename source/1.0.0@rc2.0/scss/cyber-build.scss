@@ -1,6 +1,6 @@
 
 /*! ============================================
- * Component | Cyber Framework v1.0.0 RC2.0 (2017-01-24)
+ * Cyber Framework v1.0.0 RC2.0 (2017-01-20)
  *
  * Eakkabin Jaikeawma (CoachMaxz)
  * E-Mail: eakkabin@drivesoft.co.th
@@ -15,10 +15,17 @@
 @charset 'UTF-8';
 
 /* =============================================
- * UI Component
+ * CSS Style
  * ============================================= */
 
-@import 'components/_panel';
-@import 'components/_box';
-@import 'components/_top';
-@import 'components/_navbar';
+@import 'css-style/_main';
+
+@import 'getting-started/grid/_flex-grid';
+
+@import 'css-style/color/_background';
+@import 'css-style/text/_text';
+
+@import 'css-style/table/_table';
+@import 'css-style/form/_form';
+
+@import 'css-style/image/_image';
