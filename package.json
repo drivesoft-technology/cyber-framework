@@ -1,6 +1,6 @@
 {
   "name": "cyber-framework",
-  "version": "1.0.0-rc1.4",
+  "version": "1.0.0-rc2.1",
   "description": "cyber framework - open source",
   "keywords": [
     "cyber", "framework", "css", "npm", "drivesoft", "opensource"
@@ -8,13 +8,13 @@
   "author": {
     "name": "Eakakbin Jaikeawma",
     "email": "eakkabin@drivesoft.co.th",
-    "url": "https://drivesoft.co.th"
+    "url": "https://drivesoft.co.th/cyber"
   },
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/drivesoft-newage/cyber-framework.git"
+    "url": "https://github.com/drivesoft-technology/cyber-framework.git"
   }
 }
