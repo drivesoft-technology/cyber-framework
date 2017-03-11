@@ -1,1 +1,0 @@
-scss --watch scss/cyber-component.scss:styles/cyber-component.min.css --style compressed --no-cache
