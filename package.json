@@ -1,9 +1,9 @@
 {
   "name": "cyber-framework",
-  "version": "1.0.0-rc2.1",
-  "description": "cyber framework - open source",
+  "version": "1.0.0-rc3.0",
+  "description": "Minimal css framework",
   "keywords": [
-    "cyber", "framework", "css", "npm", "drivesoft", "opensource"
+    "cyber", "framework", "css", "drivesoft", "opensource"
   ],
   "author": {
     "name": "Eakakbin Jaikeawma",

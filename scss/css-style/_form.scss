@@ -10,43 +10,94 @@
  * form 
  * ============================================= */
 
-input { line-height: normal; }
-textarea { overflow: auto; }
+input, select, textarea { background: transparent; background-color: #FFF; line-height: normal; overflow: auto; }
 select { text-transform: none; }
 
 .form { 
+	
+	padding: 0;
+	font-size: 1em;
+	// background-color: #F25;
 
-	font-size: 0.9em; padding: 10px 0; 
+	input[type="text"], 
+	input[type="password"], 
+	input[type="email"], 
+	input[type="date"], 
+	input[type="time"],
+	select { 
+		padding: 9px 10px 8px;
+		width: 100%;
+		height: 38px;
+		border-radius: 2px;
+		border: 1px solid #DDD;
+		font-size: 1.0em;
+		color: #999;
+	}
 
-	input, select { padding: 10px; width: 100%; border-radius: 1px; border: 1px solid #EEEEEE; color: #999999; font-size: 1.1em; }
-
-	input[type='submit'] { padding: 8px 18px; cursor: pointer; color: #2C3E50; }
-	input[type='submit'], input[type='checkbox'], input[type='radio'] { width: auto; }
+	input[type="submit"] { padding: 11px 18px 10px; cursor: pointer; color: #2C3E50; }
+	input[type="submit"],
+	input[type="checkbox"],
+	input[type="radio"] { width: auto; }
 
 }
 
-.form-control { 
-	display: inline-block;
+.form-group {
+
+	margin-bottom: 16px;
+
+	> label { display: block; margin-bottom: 5px; }
+	> input { display: block; }
+
+	.form-control { height: 38px; }
+
+	&.col-15, &.col-14, &.col-13, &.col-12, &.col-11, &.col-10, &.col-9, &.col-8, &.col-7, &.col-6, &.col-5, &.col-4, &.col-3, &.col-2, &.col-1 { 
+		float: left;
+		flex: none;
+		padding: 0;
+	}
+
+	.col-15, .col-14, .col-13, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+		float: left;
+		padding: 0; 
+		flex: none;
+	}
+
+	&.space { padding-right: 10px; }
+
 }
 
 .form-horizontal {
-	.form-control .form-group { display: inline-block; width: 100%;  }
+
+	margin: 0 -5px;
+
+	.form-group { 
+
+		display: block;
+		float: left;
+		padding: 0 5px !important;
+		
+		.form-control { width: 100%; }
+
+	}
+
+}
+
+.form-vertical {
+
+	.form-label { padding: 11px 0 10px; }
+
+	.form-group {
+
+		width: 100% !important;
+		overflow: auto;
+
+		&.space { padding-right: 0px; }
+
+	}
+
 }
 
 /*
-.form-group {
-	margin-bottom: 5px;
-	&.col-15, &.col-14, &.col-13, &.col-12, &.col-11, &.col-10, &.col-9, &.col-8, &.col-7, &.col-6, &.col-5, &.col-4, &.col-3, &.col-2, &.col-1 { padding: 0; flex: none; }
-	.col-15, .col-14, .col-13, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 { padding: 0; flex: none; }
-	&.getter { padding-right: 5px; }
-}
-
-.form-control { 
-	&.col-15, &.col-14, &.col-13, &.col-12, &.col-11, &.col-10, &.col-9, &.col-8, &.col-7, &.col-6, &.col-5, &.col-4, &.col-3, &.col-2, &.col-1 { padding: 0; flex: none; }
-	.form-label { padding-bottom: 5px; }
-	overflow: auto;
-	&.getter { padding-right: 5px; }
-}
 
 .form-input { border-radius: 1px; border: 1px solid #EEEEEE; padding: 8px 10px; color: #999999; width: 100%; }
 .form-input:hover { border: 1px solid #EEEEEE; }
@@ -91,4 +142,5 @@ select { text-transform: none; }
 	}	
 	.form-submit { width: auto; }
 }
+
 */
