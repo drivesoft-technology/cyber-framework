@@ -1,4 +1,4 @@
 source/
-compile-scss.bat
-compile-minify-scss.bat
+compile-scss
+compile-minify-scss
 !.gitignore

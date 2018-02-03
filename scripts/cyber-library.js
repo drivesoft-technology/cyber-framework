@@ -1,6 +1,6 @@
 
 /*
- * Cyber JavaScript Library v1.0.0 RC1.0
+ * Cyber JavaScript Library v1.0.0
  * 
  */
 

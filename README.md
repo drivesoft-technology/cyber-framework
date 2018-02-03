@@ -1,2 +1,2 @@
-# Cyber Framework RC3.0 (Last updated: 2017-08-01)
+# Cyber Framework (Last updated: 2018-02-03)
 CYBER FRAMEWORK | minimal css framework
