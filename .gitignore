@@ -1,4 +1,1 @@
-source/
-compile-scss
-compile-minify-scss
 !.gitignore
